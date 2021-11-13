@@ -1,17 +1,19 @@
 {
   "name": "desafio-m5",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:JoaquinGiacusa/desafio-m5.git",
   "author": "Joaquin <joaquingiacusa.dev@gmail.com>",
   "license": "MIT",
-  "source": "src/index.html",
+  "source": "./src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /desafio-m5",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

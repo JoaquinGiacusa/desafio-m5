@@ -31,7 +31,16 @@ export function initRulesPage(params) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
   } 
+
+  @media (max-width: 400px) {
+    .rules {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+  }
 
   .reglas__container{
     margin: 0 auto;
@@ -41,10 +50,10 @@ export function initRulesPage(params) {
     margin-bottom: 40px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     .reglas__container {
-      margin-top: 100px;
-      margin-bottom: 100px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
   }
 
@@ -64,7 +73,7 @@ export function initRulesPage(params) {
     position: fixed;
     bottom: -30px;
   }
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     .jugada-container{
       width:450px;
     }
@@ -73,7 +82,7 @@ export function initRulesPage(params) {
   .jugada{
   }
   
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     .jugada {
     height:180px;
    width: 80px;

@@ -40,10 +40,9 @@ export function initWelcomePage(params) {
     margin-bottom: 40px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 900px) {
     .title__container {
-      margin-top: 100px;
-      margin-bottom: 100px;
+      
     }
   }
 
